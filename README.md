@@ -2,52 +2,46 @@
 
 Projeto desenvolvido para detectar letras do alfabeto em Libras usando visão computacional e integrar isso a um jogo da Forca interativo.
 
+
+
 📌 📷 Sobre o Projeto
 
 Este projeto combina inteligência artificial, visão computacional e interfaces gráficas para criar um sistema capaz de:
 
-Identificar letras do alfabeto em Libras usando a posição da mão.
+-> Identificar letras do alfabeto em Libras usando a posição da mão.
 
-Interpretar movimentos e rotações da mão.
+-> Interpretar movimentos e rotações da mão.
 
 Reconhecer letras com base em:
 
-estados dos dedos,
+-> estados dos dedos,
 
-coordenadas dos pontos (landmarks),
+-> coordenadas dos pontos (landmarks),
 
-trajetória passada da mão,
+-> trajetória passada da mão,
 
-orientação (frente, diagonal, trás).
+-> orientação (frente, diagonal, trás).
 
 E usar essas letras diretamente em um Jogo da Forca feito em PyQt5.
 
 É um projeto educacional que explora IA, acessibilidade e interação homem-máquina.
 
-🧠 Tecnologias Utilizadas
-Linguagem principal
 
-Python 3.10
+🧠 Tecnologias Utilizadas
+Linguagem principal 
+-> Python 3.10
 
 Visão Computacional
 
-MediaPipe Hands
+-> MediaPipe Hands (Para detectar a mão, os dedos e gerar os pontos (landmarks).)
 
-Para detectar a mão, os dedos e gerar os pontos (landmarks).
+> TensorFlow Lite (Usado como backend otimizado.)
 
-TensorFlow Lite
-
-Usado como backend otimizado.
-
-OpenCV
-
-Leitura da webcam e manipulação das imagens.
+-> OpenCV (Leitura da webcam e manipulação das imagens.)
 
 Interface Gráfica
 
-PyQt5
-
-Criação de janelas, botões, labels, e exibição das imagens da forca.
+-> PyQt5 (Criação de janelas, botões, labels, e exibição das imagens da forca.)
 
 Outros recursos
 
@@ -62,6 +56,7 @@ Cada letra tem sua própria lógica dentro de detectar_letras().
 Arquitetura escalável
 
 Fácil adicionar novas letras ou gestos futuramente.
+
 
 🎮 Como o sistema funciona
 🖐️ 1. Detecção de mão
@@ -114,6 +109,7 @@ Se errar, incrementa o contador de erros
 
 Tudo em tempo real.
 
+
 🧩 Recursos implementados
 
 ✔ Reconhecimento de letras estáticas
@@ -125,6 +121,7 @@ Tudo em tempo real.
 ✔ Lógica modular e organizada em classes
 ✔ Fácil expansão (basta criar nova classe para cada letra)
 
+
 🚀 Como executar o projeto
 1. Instale as dependências
 pip install mediapipe opencv-python PyQt5 tensorflow
@@ -132,8 +129,8 @@ pip install mediapipe opencv-python PyQt5 tensorflow
 2. Execute o sistema
 python jogo.py
 
-
 O jogo abrirá automaticamente, juntamente com a câmera.
+
 
 📁 Estrutura do Projeto
 📦 Projeto-Libras-Forca
@@ -152,6 +149,7 @@ O jogo abrirá automaticamente, juntamente com a câmera.
 │   └── ...
 │
 └── README.md
+
 
 🧪 Melhorias futuras
 
